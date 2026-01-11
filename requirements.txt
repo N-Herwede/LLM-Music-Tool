@@ -1,0 +1,60 @@
+# ===========================================
+#  Music Agent Pro - Dependencies
+# ===========================================
+
+# Audio Processing
+numpy>=1.21.0
+scipy>=1.7.0
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.0          # Audio conversion (mp3)
+
+# Data Processing
+polars>=0.20.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.12.0
+
+# Web Interface
+flask>=3.0.0
+werkzeug>=3.0.0
+
+# Media Download
+yt-dlp>=2024.10.0
+
+# Music Identification (async)
+shazamio>=0.6.0
+
+# AI Audio Tagging (optional, needs tensorflow)
+# musicnn>=0.1.0
+
+# Text to Speech
+pyttsx3>=2.90
+
+# Configuration
+pyyaml>=6.0.0
+python-dotenv>=1.0.0
+
+# -------------------------------------------
+# LLM Providers (install at least one)
+# -------------------------------------------
+
+# Local - Free (recommended for offline use)
+ollama>=0.3.0
+
+# Cloud - Free tier available (recommended!)
+groq>=0.4.0
+
+# Cloud - Paid (optional)
+# openai>=1.0.0
+# anthropic>=0.18.0
+
+# -------------------------------------------
+# System Dependencies (install separately)
+# -------------------------------------------
+# FFmpeg - required for audio conversion
+#   Ubuntu/Debian: sudo apt install ffmpeg
+#   Mac: brew install ffmpeg
+#   Windows: https://ffmpeg.org/download.html
+yt-dlp
