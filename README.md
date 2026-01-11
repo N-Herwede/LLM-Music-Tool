@@ -1,6 +1,6 @@
-# Music Agent Pro
+# Music Agent 
 
-Music Agent Pro is a tool-using AI system for music library analysis. It connects a Large Language Model (LLM) to a modular set of Python tools that do the real work: audio feature extraction, similarity search, report generation, conversion, and external data retrieval. The LLM orchestrates tool selection and composes the final response, but it does not invent data.
+Music Agent  is a tool-using AI system for music library analysis. It connects a Large Language Model (LLM) to a modular set of Python tools that do the real work: audio feature extraction, similarity search, report generation, conversion, and external data retrieval. The LLM orchestrates tool selection and composes the final response, but it does not invent data.
 
 This repository is designed for local use first, with an optional web UI. It includes a SQLite database for persistence, a structured file layout for outputs, and multiple LLM providers.
 
