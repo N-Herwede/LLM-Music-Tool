@@ -1,3 +1,5 @@
+M2 DATA SCIENCE - NOAH HERWEDE & LAIFA AHMED-YAHIA
+
 # Music Agent 
 
 Music Agent  is a tool-using AI system for music library analysis. It connects a Large Language Model (LLM) to a modular set of Python tools that do the real work: audio feature extraction, similarity search, report generation, conversion, and external data retrieval. The LLM orchestrates tool selection and composes the final response, but it does not invent data.
