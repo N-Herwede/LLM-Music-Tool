@@ -39,23 +39,29 @@ The system is split into three layers:
 
 ```mermaid
 flowchart LR
-  user[User]
-  ui[Web UI / CLI]
-  agent[Agent Orchestrator]
-  llm[LLM Providers]
-  tools[Tool Catalog]
-  db[(SQLite DB)]
-  fs[(Local Filesystem)]
-  apis[External APIs\n(Deezer, YouTube, Shazam)]
+  user["User"]
+  ui["Web UI / CLI"]
+  agent["Agent Orchestrator"]
+  llm["LLM Providers"]
+  tools["Tool Catalog"]
+  db[("SQLite DB")]
+  fs[("Local Filesystem")]
+  apis["External APIs<br/>(Deezer, YouTube, Shazam)"]
 
-  user --> ui --> agent
+  user --> ui
+  ui --> agent
+
   agent --> llm
   agent --> tools
+
   tools --> db
   tools --> fs
   tools --> apis
   tools --> agent
-  agent --> ui --> user
+
+  agent --> ui
+  ui --> user
+
 ```
 
 ## Database schema
@@ -243,7 +249,7 @@ For local usage:
 ```bash
 ollama pull llama3.2:3b
 ```
-
+don't forget to to initialise the model  after dl
 If you have a `.env.example`, copy it to `.env` and fill in your keys.
 
 ## Database initialization
